@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript課題④</title>
+<style>
+  #sentence {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 0.5em 0;
+  }
+  p {
+    margin: 0;
+  }
+  p:empty {
+    display: none;
+  }
+  #button__area {
+    margin-top: 1rem;
+  }
+  .sentence__area {
+    margin-top: 1rem;
+  }
+  #category, #difficulty {
+    font-weight: bold;
+  }
+  button {
+    display: block;
+    margin-top: 0.5rem;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1 id="head">ようこそ</h1>
+      <div>
+        <p id="category"></p>
+      </div>
+      <div>
+        <p id="difficulty"></p>
+      </div>
+      <div class="sentence__area">
+        <p id="sentence">以下のボタンをクリック</p>
+      </div>
+      <div id="button__area">
+        <button id='start-button' type="button">
+          開始
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
