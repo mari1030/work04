@@ -50,9 +50,9 @@
   const categoryElement = document.getElementById('category');
   const difficultyElement = document.getElementById('difficulty');
 
-  startButton.addEventListener('click', () => {
+  startButton.addEventListener('click', async () => {
     startButton.hidden = true;
-    fetchQuizDate(1);
+    await fetchQuizDate(1);
   });
 
   const fetchQuizDate = async (index) => {
