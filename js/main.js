@@ -59,10 +59,13 @@
     titleElement.textContent = '取得中';
     questionElement.textContent = '少々お待ちください';
     
+    let quizInstance = '';
+    let quizData = '';
+    
     try {
       const response = await fetch(API_URL);
-      const quizData = await response.json();
-      const quizInstance = new Quiz(quizData);      
+      quizData = await response.json();
+      quizInstance = new Quiz(quizData);      
     } catch(e) {
       console.error(e);
       throw e;
